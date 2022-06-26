@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+    {{> header}}
+
+</head>
+
+<body>
+    <h1>add Article</Article>
+    </h1>
+    <div class="container">
+        <!-- injecting partial pages -->
+        {{> menubar}}
+
+        <form action='/users/add-article' method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <input type="text" name="title" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Enter title">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="form-label">Description</label>
+                <textarea name="description"  class = "form-control"></textarea>   
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- injecting partial pages -->
+            {{> footer}}
+
+</body>
+
+</html>
